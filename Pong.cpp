@@ -11,7 +11,7 @@
 
 // TODO:
 // SECOND PLAYER
-// SCENE MANAGEMENT
+// Fix Transition from Game Scenes to Main Menu. Currently the game just closes.
 // ????
 
 const int SCREEN_WIDTH = 1280;
@@ -33,7 +33,7 @@ int main()
 
 	InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, WINDOW_NAME);
 	SetTargetFPS(TARGET_FPS);
-
+	SetExitKey(KEY_F10);
 	// Initialize Scenes
 	mainMenuScene = new MainMenuScene();
 	singlePlayerScene = new SinglePlayerScene();

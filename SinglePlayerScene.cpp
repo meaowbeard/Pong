@@ -2,6 +2,7 @@
 #include "raylib.h"
 #include "SceneManager.h"
 #include "Colors.h"
+#include <iostream>
 
 SinglePlayerScene::SinglePlayerScene()
     : ball(GetScreenWidth() / 2, GetScreenHeight() / 2, 7, 7, 20),

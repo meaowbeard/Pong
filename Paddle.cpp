@@ -15,6 +15,16 @@ Paddle::Paddle()
 	X = SCREEN_WIDTH - Width - 10;
 	Y = SCREEN_HEIGHT / 2 - Height / 2;
 	Speed = 6;
+
+	UpKey = KEY_UP;
+	DownKey = KEY_DOWN;
+}
+
+Paddle::Paddle(float x, float y, float width, float height, int speed, int upKey, int downKey)
+	: X(x), Y(y), Width(width), Height(height), Speed(speed), UpKey(upKey), DownKey(downKey)
+{
+	SCREEN_WIDTH = GetScreenWidth();
+	SCREEN_HEIGHT = GetScreenHeight();
 }
 
 void Paddle::Draw()
@@ -24,17 +34,17 @@ void Paddle::Draw()
 
 void Paddle::Update()
 {
-	if (IsKeyDown(KEY_UP))
+	if (IsKeyDown(UpKey))
 	{
 		Y = Y - Speed;
 		//std::cout << "Update Called" << std::endl;
 	}
-	
-	if (IsKeyDown(KEY_DOWN))
+
+	if (IsKeyDown(DownKey))
 	{
 		Y = Y + Speed;
 	}
-	
+
 	LimitMovement();
 }
 

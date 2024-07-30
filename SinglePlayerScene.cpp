@@ -34,10 +34,10 @@ void SinglePlayerScene::Update()
         ball.SpeedX *= -1;
     }
 
-	if (IsKeyPressed(KEY_ESCAPE))
-	{
-		currentScene = mainMenuScene;
-	}
+    if (IsKeyPressed(KEY_ESCAPE))
+    {
+        currentScene = mainMenuScene;
+    }
 }
 
 void SinglePlayerScene::Draw()

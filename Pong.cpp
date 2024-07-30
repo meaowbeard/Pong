@@ -11,7 +11,6 @@
 
 // TODO:
 // SECOND PLAYER
-// Fix Transition from Game Scenes to Main Menu. Currently the game just closes.
 // ????
 
 const int SCREEN_WIDTH = 1280;

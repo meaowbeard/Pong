@@ -7,6 +7,9 @@ public:
 	int SpeedX;
 	int SpeedY;
 	int Radius;
+	int UpKey;
+	int DownKey;
+
 
 	Ball(float x, float y, int speedX, int speedY, int radius);
 	void Draw();

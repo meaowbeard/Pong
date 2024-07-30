@@ -20,9 +20,6 @@ Paddle::Paddle()
 void Paddle::Draw()
 {
 	DrawRectangleRounded(Rectangle{ X, Y, Width, Height }, 0.8, 0, WHITE);
-	//std::cout << "X: " << X;
-	//std::cout << " Y: " << Y << std::endl;
-
 }
 
 void Paddle::Update()
@@ -39,9 +36,6 @@ void Paddle::Update()
 	}
 	
 	LimitMovement();
-
-	std::cout << GetScreenWidth() - Width - 10 << " X: ";
-	std::cout << X << std::endl;
 }
 
 void Paddle::LimitMovement()

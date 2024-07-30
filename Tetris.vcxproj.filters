@@ -9,10 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Header Files\Scene Management">
       <UniqueIdentifier>{22e4743f-4c35-4b84-852b-2a7fa5e028b7}</UniqueIdentifier>
     </Filter>
@@ -22,9 +18,13 @@
     <Filter Include="Header Files\UI Elements">
       <UniqueIdentifier>{351c3138-29a9-4d52-bf63-56b9ea4de9c0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Tetris.cpp">
+    <ClCompile Include="Pong.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Button.cpp">
@@ -35,6 +35,18 @@
     </ClCompile>
     <ClCompile Include="Ball.cpp">
       <Filter>Header Files\Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Header Files\Scene Management</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuScene.cpp">
+      <Filter>Header Files\Scene Management</Filter>
+    </ClCompile>
+    <ClCompile Include="SinglePlayerScene.cpp">
+      <Filter>Header Files\Scene Management</Filter>
+    </ClCompile>
+    <ClCompile Include="CoOpScene.cpp">
+      <Filter>Header Files\Scene Management</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +66,18 @@
       <Filter>Header Files\Game Objects</Filter>
     </ClInclude>
     <ClInclude Include="Button.h">
+      <Filter>Header Files\UI Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="SinglePlayerScene.h">
+      <Filter>Header Files\Scene Management</Filter>
+    </ClInclude>
+    <ClInclude Include="CoOpScene.h">
+      <Filter>Header Files\Scene Management</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Header Files\Scene Management</Filter>
+    </ClInclude>
+    <ClInclude Include="Colors.h">
       <Filter>Header Files\UI Elements</Filter>
     </ClInclude>
   </ItemGroup>

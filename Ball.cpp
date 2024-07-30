@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Ball.h"
 #include "raylib.h"
 
@@ -10,7 +11,7 @@ void Ball::Update(int& p1_score, int& p2_score)
 {
 	X += SpeedX;
 	Y += SpeedY;
-
+	
 	if (Y + Radius >= GetScreenHeight() || Y - Radius <= 0) // PLAYER ONE WINS
 	{
 		SpeedY *= -1;
@@ -18,10 +19,12 @@ void Ball::Update(int& p1_score, int& p2_score)
 	if (X + Radius >= GetScreenWidth()) // PLAYER TWO WINS
 	{
 		p2_score++;
+		std::cout << "Player 2 Scored\n";
 		ResetBall();
 	}
 	if (X - Radius <= 0) 
 	{
+		std::cout << "Player 1 Scored\n";
 		p1_score++;
 		ResetBall();
 	}

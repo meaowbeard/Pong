@@ -130,16 +130,24 @@
   <ItemGroup>
     <ClCompile Include="Ball.cpp" />
     <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CoOpScene.cpp" />
+    <ClCompile Include="MainMenuScene.cpp" />
     <ClCompile Include="Paddle.cpp" />
-    <ClCompile Include="Tetris.cpp" />
+    <ClCompile Include="Pong.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="SinglePlayerScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AI_Paddle.h" />
     <ClInclude Include="Ball.h" />
     <ClInclude Include="Button.h" />
+    <ClInclude Include="Colors.h" />
+    <ClInclude Include="CoOpScene.h" />
     <ClInclude Include="MainMenuScene.h" />
     <ClInclude Include="Paddle.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="SinglePlayerScene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

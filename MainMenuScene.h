@@ -12,4 +12,5 @@ class MainMenuScene : public Scene
 		MainMenuScene();
 		void Update() override;
 		void Draw() override;
+		void ResetScore() override;
 };

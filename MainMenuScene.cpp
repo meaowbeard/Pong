@@ -16,11 +16,13 @@ void MainMenuScene::Update()
 	if (SinglePlayerButton.IsClicked())
 	{
 		currentScene = singlePlayerScene;
+		currentScene->ResetScore();
 		std::cout << "Single Player Button Clicked";
 	}
 	if (CoOpButton.IsClicked())
 	{
 		currentScene = coOpScene;
+		currentScene->ResetScore();
 	}
 	if (QuitButton.IsClicked())
 	{
@@ -36,6 +38,10 @@ void MainMenuScene::Draw()
 	SinglePlayerButton.Draw();
 	CoOpButton.Draw();
 	QuitButton.Draw();
+}
+
+void MainMenuScene::ResetScore()
+{
 }
 
 

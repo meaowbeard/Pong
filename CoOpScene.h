@@ -16,4 +16,6 @@ public:
 
     void Update() override;
     void Draw() override;
+    void ResetScore() override;
+
 };

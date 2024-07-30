@@ -9,8 +9,7 @@ SinglePlayerScene::SinglePlayerScene()
     p1_paddle(),
     CPU_Paddle()
 {
-    PLAYER_ONE_SCORE = 0;
-    PLAYER_TWO_SCORE = 0;
+    ResetScore();
 
     CPU_Paddle.Height = 120;
     CPU_Paddle.Width = 25;
@@ -51,4 +50,10 @@ void SinglePlayerScene::Draw()
     CPU_Paddle.Draw();
     DrawText(TextFormat("%i", PLAYER_TWO_SCORE), GetScreenWidth() / 4 - 20, 20, 80, WHITE);
     DrawText(TextFormat("%i", PLAYER_ONE_SCORE), 3 * GetScreenWidth() / 4 - 20, 20, 80, WHITE);
+}
+
+void SinglePlayerScene::ResetScore()
+{
+    PLAYER_ONE_SCORE = 0;
+    PLAYER_TWO_SCORE = 0;
 }

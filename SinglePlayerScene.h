@@ -18,4 +18,5 @@ class SinglePlayerScene : public Scene
 
 		void Update() override;
 		void Draw() override;
+		void ResetScore() override;
 };

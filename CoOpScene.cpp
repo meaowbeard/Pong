@@ -5,8 +5,8 @@
 
 CoOpScene::CoOpScene()
     : ball(GetScreenWidth() / 2, GetScreenHeight() / 2, 7, 7, 20),
-    p1_paddle(10, GetScreenHeight() / 2 - 60, 25, 120, 6, KEY_W, KEY_S),
-    p2_paddle(GetScreenWidth() - 35, GetScreenHeight() / 2 - 60, 25, 120, 6, KEY_UP, KEY_DOWN)
+    p1_paddle(GetScreenWidth() - 35, GetScreenHeight() / 2 - 60, 25, 120, 6, KEY_UP, KEY_DOWN),
+    p2_paddle(10, GetScreenHeight() / 2 - 60, 25, 120, 6, KEY_W, KEY_S) 
 {
     PLAYER_ONE_SCORE = 0;
     PLAYER_TWO_SCORE = 0;
@@ -41,6 +41,6 @@ void CoOpScene::Draw() {
     ball.Draw();
     p1_paddle.Draw();
     p2_paddle.Draw();
-    DrawText(TextFormat("%i", PLAYER_ONE_SCORE), GetScreenWidth() / 4 - 20, 20, 80, WHITE);
-    DrawText(TextFormat("%i", PLAYER_TWO_SCORE), 3 * GetScreenWidth() / 4 - 20, 20, 80, WHITE);
+    DrawText(TextFormat("%i", PLAYER_ONE_SCORE), 3 * GetScreenWidth() / 4 - 20, 20, 80, WHITE); 
+    DrawText(TextFormat("%i", PLAYER_TWO_SCORE), GetScreenWidth() / 4 - 20, 20, 80, WHITE);
 }

@@ -27,10 +27,12 @@ void SinglePlayerScene::Update()
     // Check Collision
     if (CheckCollisionCircleRec(Vector2{ ball.X, ball.Y }, ball.Radius, Rectangle{ p1_paddle.X, p1_paddle.Y, p1_paddle.Width, p1_paddle.Height })) {
         ball.SpeedX *= -1;
+        PlaySound(ball.sfxPongOne);
     }
 
     if (CheckCollisionCircleRec(Vector2{ ball.X, ball.Y }, ball.Radius, Rectangle{ CPU_Paddle.X, CPU_Paddle.Y, CPU_Paddle.Width, CPU_Paddle.Height })) {
         ball.SpeedX *= -1;
+        PlaySound(ball.sfxPongTwo);
     }
 
     if (IsKeyPressed(KEY_ESCAPE))

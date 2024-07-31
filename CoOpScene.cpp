@@ -2,6 +2,7 @@
 #include "raylib.h"
 #include "SceneManager.h"
 #include "Colors.h"
+#include <iostream>
 
 CoOpScene::CoOpScene()
     : ball(GetScreenWidth() / 2, GetScreenHeight() / 2, 7, 7, 20),
@@ -19,10 +20,12 @@ void CoOpScene::Update()
 
     if (CheckCollisionCircleRec(Vector2{ ball.X, ball.Y }, ball.Radius, Rectangle{ p1_paddle.X, p1_paddle.Y, p1_paddle.Width, p1_paddle.Height })) {
         ball.SpeedX *= -1;
+        PlaySound(ball.sfxPongOne);
     }
 
     if (CheckCollisionCircleRec(Vector2{ ball.X, ball.Y }, ball.Radius, Rectangle{ p2_paddle.X, p2_paddle.Y, p2_paddle.Width, p2_paddle.Height })) {
         ball.SpeedX *= -1;
+        PlaySound(ball.sfxPongTwo);
     }
 
     // Add co-op game logic here

@@ -10,7 +10,7 @@
 #include "raylib.h"
 
 // TODO:
-// SECOND PLAYER
+// Countdown to begin
 // ????
 
 const int SCREEN_WIDTH = 1280;
@@ -33,6 +33,8 @@ int main()
 	InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, WINDOW_NAME);
 	SetTargetFPS(TARGET_FPS);
 	SetExitKey(KEY_F10);
+	InitAudioDevice();
+
 	// Initialize Scenes
 	mainMenuScene = new MainMenuScene();
 	singlePlayerScene = new SinglePlayerScene();
@@ -48,9 +50,7 @@ int main()
 		{
 			currentScene->Update();
 		}
-
 		// Drawing
-		
 		ClearBackground(BackgroundColor);
 		if (currentScene != nullptr)
 		{

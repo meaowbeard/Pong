@@ -81,4 +81,15 @@
       <Filter>Header Files\UI Elements</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\pong_beep.ogg">
+      <Filter>Source Files\Resource Files</Filter>
+    </None>
+    <None Include="assets\pong_plop.ogg">
+      <Filter>Source Files\Resource Files</Filter>
+    </None>
+    <None Include="assets\pong_score.ogg">
+      <Filter>Source Files\Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

@@ -149,6 +149,11 @@
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SinglePlayerScene.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\pong_beep.ogg" />
+    <None Include="assets\pong_plop.ogg" />
+    <None Include="assets\pong_score.ogg" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

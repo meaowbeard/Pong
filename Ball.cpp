@@ -26,8 +26,9 @@ void Ball::Update(int& p1_score, int& p2_score)
 	}
 	if (X - Radius <= 0) // PLAYER ONE WINS
 	{
-		std::cout << "Player 1 Scored\n";
 		p1_score++;
+		std::cout << "Player 1 Scored\n";
+		PlaySound(sfxScore);
 		ResetBall();
 	}
 }

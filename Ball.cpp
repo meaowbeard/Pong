@@ -14,7 +14,7 @@ void Ball::Update(int& p1_score, int& p2_score)
 	
 	if (Y + Radius >= GetScreenHeight() || Y - Radius <= 0) 
 	{
-		std::cout << "Should Play Sound?\n";
+		//std::cout << "Should Play Sound?\n";
 		SpeedY *= -1;
 	}
 	if (X + Radius >= GetScreenWidth()) // PLAYER TWO WINS
@@ -28,7 +28,6 @@ void Ball::Update(int& p1_score, int& p2_score)
 	{
 		std::cout << "Player 1 Scored\n";
 		p1_score++;
-		PlaySound(sfxScore);
 		ResetBall();
 	}
 }

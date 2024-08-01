@@ -17,7 +17,7 @@ void MainMenuScene::Update()
 	{
 		currentScene = singlePlayerScene;
 		currentScene->ResetScore();
-		std::cout << "Single Player Button Clicked";
+		//std::cout << "Single Player Button Clicked";
 	}
 	if (CoOpButton.IsClicked())
 	{

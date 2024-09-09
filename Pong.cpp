@@ -9,10 +9,6 @@
 #include "CoOpScene.h"
 #include "raylib.h"
 
-// TODO:
-// Countdown to begin
-// ????
-
 const int SCREEN_WIDTH = 1280;
 const int SCREEN_HEIGHT = 720;
 const char WINDOW_NAME[] = "Pong";

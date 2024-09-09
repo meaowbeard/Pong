@@ -33,7 +33,7 @@ void MainMenuScene::Update()
 void MainMenuScene::Draw()
 {
 	DrawText("Crazy Ball", GetScreenWidth() / 2 - MeasureText("Crazy Ball", 40) / 2, 150, 40, WHITE);
-	DrawText("Developed by: Mario, Tester: Eli", GetScreenWidth() / 2 - MeasureText("Developed by: Mario, Tester: Eli", 10), GetScreenHeight() - 150, 20, WHITE);
+	DrawText("Mario", GetScreenWidth() / 2 - MeasureText("Mario", 10), GetScreenHeight() - 150, 20, WHITE);
 	
 	SinglePlayerButton.Draw();
 	CoOpButton.Draw();
@@ -43,6 +43,3 @@ void MainMenuScene::Draw()
 void MainMenuScene::ResetScore()
 {
 }
-
-
-
